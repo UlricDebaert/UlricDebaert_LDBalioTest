@@ -8,7 +8,7 @@ namespace StarterAssets
     {
         private void OnTriggerEnter(Collider other)
         {
-            if (other.name == "PlayerArmature")
+            if (other.name == "UD_PlayerArmature")
             {
                 print("SLOWED!");
                 other.GetComponent<ThirdPersonController>().isSlowed = true;
@@ -17,7 +17,7 @@ namespace StarterAssets
 
         private void OnTriggerExit(Collider other)
         {
-            if (other.name == "PlayerArmature")
+            if (other.name == "UD_PlayerArmature")
             {
                 print("FREE!");
                 other.GetComponent<ThirdPersonController>().isSlowed = false;
