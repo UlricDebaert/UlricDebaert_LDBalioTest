@@ -22,4 +22,16 @@ public class GameManager : MonoBehaviour
 
         instance = this;
     }
+
+    public void AddCoin()
+    {
+        coinCount++;
+        uiManager.UpdateUI();
+    }
+
+    public void AddStar()
+    {
+        starCount++;
+        uiManager.UpdateUI();
+    }
 }
