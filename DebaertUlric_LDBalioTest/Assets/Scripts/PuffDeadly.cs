@@ -10,6 +10,5 @@ public class PuffDeadly : MonoBehaviour
         {
             print("DEAD");
         }
-        else print(collision.collider.name.ToString());
     }
 }

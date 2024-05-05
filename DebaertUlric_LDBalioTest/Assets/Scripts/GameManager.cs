@@ -34,4 +34,16 @@ public class GameManager : MonoBehaviour
         starCount++;
         uiManager.UpdateUI();
     }
+
+    public void GetGroom()
+    {
+        groomFound = true;
+        uiManager.GetGroom();
+    }
+
+    public void LeaveGroom()
+    {
+        groomFound = false;
+        uiManager.LeaveGroom();
+    }
 }
