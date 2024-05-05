@@ -34,7 +34,7 @@ public class DeadlyPuffSpawner : MonoBehaviour
 
     void SpawnPuff()
     {
-        int id = Random.Range(0, firePos.Length-1);
+        int id = Random.Range(0, firePos.Length);
         Instantiate(puffPrefab, firePos[id]);
     }
 }
